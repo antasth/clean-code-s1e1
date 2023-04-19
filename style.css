@@ -128,7 +128,7 @@
 }
 
 /* Completed */
-.todo-list#completed-tasks .todo-item__label {
+.completed-tasks .todo-item__label {
     text-decoration: line-through
     color: #888;
 }
