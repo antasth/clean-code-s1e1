@@ -21,17 +21,17 @@ body {
 .header { text-align: center;
 }
 }
-.page-content {
+.content {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
-.task {
+.task, .new-task__input, .todo-item__input, .todo-item__label {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.new-task__wrapper {
     display: flex;
 }
 ul {
@@ -118,12 +118,12 @@ li > label {
 li >    input[type="text"] {
     width: 226px
 }
-button.delete img {
+button.todo-item__button_delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+button.todo-item__button_delete img:hover {
     transform: rotateZ(0);
 }
 
