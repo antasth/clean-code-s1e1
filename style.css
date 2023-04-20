@@ -35,14 +35,14 @@
   display: flex;
 }
 .todo-list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 .todo-item, .title {
-  list-style:none;
+  list-style: none;
 }
 .button, .todo-item__input, .new-task__input{
-  outline:none;
+  outline: none;
 }
 .button {
   background: none;
@@ -134,14 +134,14 @@
 
 /* Edit Task */
 .todo-item__input {
-  display:none
+  display: none
 }
 
 .todo-item_edit .todo-item__input {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .todo-item_edit .todo-item__label {
-  display:none;
+  display: none;
 }
