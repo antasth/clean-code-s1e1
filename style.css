@@ -29,7 +29,7 @@
 .task, .new-task__input, .todo-item__input, .todo-item__label {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .new-task__wrapper {
   display: flex;
@@ -115,7 +115,7 @@
   width: 226px;
 }
 .new-task__input, .todo-item__input {
-  width: 226px
+  width: 226px;
 }
 .todo-item__img {
   height: 2em;
@@ -128,18 +128,18 @@
 
 /* Completed */
 .completed-tasks .todo-item__label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .todo-item__input {
-  display: none
+  display: none;
 }
 
 .todo-item_edit .todo-item__input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .todo-item_edit .todo-item__label {
