@@ -29,8 +29,8 @@
 }
 .task, 
 .new-task__input, 
-.todo-item__input, 
-.todo-item__label {
+.todo-list__input, 
+.todo-list__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -42,12 +42,12 @@
   margin: 0;
   padding: 0px;
 }
-.todo-item, 
-.title {
+.todo-list__item, 
+.section__title {
   list-style: none;
 }
 .button, 
-.todo-item__input, 
+.todo-list__input, 
 .new-task__input{
   outline: none;
 }
@@ -64,7 +64,7 @@
   color: #3a3A3a;
 }
 /* Heading */
-.title,
+.section__title,
 .new-task__label {
   color: #333;
   font-weight: 700;
@@ -75,7 +75,7 @@
   text-transform: uppercase;
 }
 .new-task__input, 
-.todo-item__input {
+.todo-list__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -88,7 +88,7 @@
   color: #888;
 }
 .new-task__input, 
-.todo-item__input:focus {
+.todo-list__input:focus {
   color: #333;
 }
 
@@ -102,7 +102,7 @@
 }
 
 /* Task list */
-.todo-item {
+.todo-list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -110,48 +110,48 @@
   justify-content: space-between;
   align-items: center;
 }
-.todo-item {
+.todo-list__item {
   vertical-align: middle;
 }
-.todo-item__checkbox {
+.todo-list__checkbox {
   margin: 0 10px;
 }
-.todo-item__label {
+.todo-list__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 .new-task__input, 
-.todo-item__input {
+.todo-list__input {
   width: 226px;
 }
-.todo-item__img {
+.todo-list__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.todo-item__img:hover {
+.todo-list__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 .completed-tasks
-.todo-item__label {
+.todo-list__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.todo-item__input {
+.todo-list__input {
   display: none;
 }
-.todo-item_edit 
-.todo-item__input {
+.todo-list_edit 
+.todo-list__input {
   display: inline-block;
   width: 224px;
 }
-.todo-item_edit 
-.todo-item__label {
+.todo-list_edit 
+.todo-list__label {
   display: none;
 }
