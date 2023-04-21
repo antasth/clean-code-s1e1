@@ -25,24 +25,24 @@
     <main class="content">
       <section class="section section_new">
         <h3 class="section__title">Add Item</h3>
-        <div class="new-task__wrapper">
-          <input class="new-task__input" id="new-task" type="text">
+        <div class="new-task">
+          <input class="new-task__input" id="new-task-input" type="text">
           <button class="button new-task__button">Add</button>
         </div>
       </section>
       <section class="section section_todo">
         <h3 class="section__title">Todo</h3>
-        <ul class="todo-list todo-tasks">
+        <ul class="todo-list todo-list_incompleted">
           <li class="todo-list__item">
             <input class="todo-list__checkbox" type="checkbox">
             <label class="todo-list__label">Pay Bills</label>
-            <input class="todo-list__input" type="text" >
+            <input class="todo-list__input" type="text">
             <button class="button todo-list__button todo-list__button_edit">Edit</button>
             <button class="button todo-list__button todo-list__button_delete">
               <img class="todo-list__img" src="./remove.svg" alt="remove button">
             </button>
           </li>
-          <li class="todo-list__item todo-list_edit">
+          <li class="todo-list__item todo-list__item_edit">
             <input class="todo-list__checkbox" type="checkbox">
             <label class="todo-list__label">Go Shopping</label>
             <input class="todo-list__input" type="text" value="Go Shopping">
@@ -55,7 +55,7 @@
       </section>
       <section class="section section_done">
         <h3 class="section__title">Completed</h3>
-        <ul class="todo-list completed-tasks">
+        <ul class="todo-list todo-list_completed">
           <li class="todo-list__item">
             <input class="todo-list__checkbox" type="checkbox" checked>
             <label class="todo-list__label">See the Doctor</label>

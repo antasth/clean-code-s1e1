@@ -34,7 +34,7 @@
   display: inline-block;
   flex-grow: 1;
 }
-.new-task__wrapper {
+.new-task {
   display: flex;
   padding: 20px 0;
 }
@@ -141,12 +141,12 @@
 .todo-list__input {
   display: none;
 }
-.todo-list_edit 
+.todo-list__item_edit 
 .todo-list__input {
   display: inline-block;
   width: 224px;
 }
-.todo-list_edit 
+.todo-list__item_edit 
 .todo-list__label {
   display: none;
 }

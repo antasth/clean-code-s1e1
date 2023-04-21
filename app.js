@@ -8,10 +8,10 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.getElementById("new-task");//Add a new task.
+var taskInput=document.getElementById("new-task-input");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.querySelector(".todo-tasks");//ul of #incompleteTasks
-var completedTasksHolder=document.querySelector(".completed-tasks");//completed-tasks
+var incompleteTaskHolder=document.querySelector(".todo-list_incompleted");//ul of #incompleteTasks
+var completedTasksHolder=document.querySelector(".todo-list_completed");//completed-tasks
 
 console.log(taskInput);
 //New task list item
@@ -90,7 +90,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('.todo-list__input');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".todo-list__button_edit");
-    var containsClass=listItem.classList.contains("todo-list_edit");
+    var containsClass=listItem.classList.contains("todo-list__item_edit");
     //If class of the parent is .todo-item_edit
     if(containsClass){
 
@@ -104,7 +104,7 @@ var editTask=function(){
     }
 
     //toggle .todo-item_edit on the parent.
-    listItem.classList.toggle("todo-list_edit");
+    listItem.classList.toggle("todo-list__item_edit");
 };
 
 
