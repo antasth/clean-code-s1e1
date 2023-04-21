@@ -37,6 +37,7 @@
 }
 .new-task__wrapper {
   display: flex;
+  padding: 20px 0;
 }
 .todo-list {
   margin: 0;
@@ -64,8 +65,7 @@
   color: #3a3A3a;
 }
 /* Heading */
-.section__title,
-.new-task__label {
+.section__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -93,10 +93,6 @@
 }
 
 /* New Task */
-.new-task__label {
-  display: block;
-  margin: 0 0 20px;
-}
 .new-task__input {
   width: 318px;
 }
