@@ -131,7 +131,7 @@
 }
 
 /* Completed */
-.completed-tasks
+.todo-list_completed
 .todo-list__label {
   text-decoration: line-through;
   color: #888;
